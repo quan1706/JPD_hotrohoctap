@@ -1,0 +1,24 @@
+{
+    "manifest_version": 3,
+    "name": "JPD Helper - FPT Japanese Tool",
+    "version": "1.5",
+    "description": "Tool hiện đáp án học tập trên jpd.lovable.app.",
+    "permissions": [],
+    "host_permissions": [
+        "https://jpd.lovable.app/*"
+    ],
+    "content_scripts": [
+        {
+            "matches": [
+                "https://jpd.lovable.app/*"
+            ],
+            "js": [
+                "content.js"
+            ],
+            "run_at": "document_idle"
+        }
+    ],
+    "action": {
+        "default_popup": "popup.html"
+    }
+}

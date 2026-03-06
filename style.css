@@ -1,0 +1,62 @@
+#jpd-helper-box {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 250px;
+    background: rgba(255, 255, 255, 0.95);
+    border: 2px solid #ff6b00;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    z-index: 99999;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow: hidden;
+    backdrop-filter: blur(5px);
+}
+
+.jpd-header {
+    background: #ff6b00;
+    color: white;
+    padding: 8px 12px;
+    font-weight: bold;
+    cursor: move;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#jpd-close {
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.jpd-content {
+    padding: 12px;
+}
+
+.jpd-row {
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #333;
+}
+
+.jpd-row strong {
+    color: #ff6b00;
+    display: inline-block;
+    width: 50px;
+}
+
+.selectable {
+    user-select: all;
+    background: #fff3e0;
+    padding: 2px 4px;
+    border-radius: 4px;
+    font-family: monospace;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#jpd-meaning {
+    font-style: italic;
+    color: #555;
+    font-size: 15px;
+}
